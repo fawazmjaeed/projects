@@ -496,7 +496,7 @@
             color: #0a66c2;
             margin-bottom: 0.5rem;
         }
-		.kpi-grid {
+		.dashboard {
 			display: grid;
 			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 			gap: 1.5rem;
@@ -570,8 +570,9 @@
 				</div>
 
 				<div class="nav-links">
-					<a href="#timeline"><i class="fas fa-history"></i> Timeline</a>
 					<a href="#achievements"><i class="fas fa-trophy"></i> Achievements</a>
+					<a href="#dashboard"><i class="fas fa-poll"></i> Dashboard</a>
+					<a href="#timeline"><i class="fas fa-history"></i> Timeline</a>
 				</div>
 			</div>
         </div>
@@ -628,13 +629,13 @@
         </div>
     </div>
  
-    <div class="container">
+    <div class="container" id="dashboard">
         <h2 class="section-title"><i class="fas fa-chart-line"></i> Project Portfolio KPI Dashboard</h2>
 				<p class="kpi-disclaimer" role="note" aria-label="KPI aggregation method">
-				<strong>Note:</strong> Weighted average is used for smaller projects and events; mean (simple) average is used for store-opening projects.
+				<strong>Note:</strong> Weighted average is used for adhoc projects and events; mean (simple) average is used for standard store opening projects to calculate final KPIs for the portfolio.
 				</p>
 
-        <div class="kpi-grid">
+        <div class="dashboard">
             <div class="kpi-card">
                 <i class="fas fa-clock"></i>
                 <h3>Schedule Variance</h3>
